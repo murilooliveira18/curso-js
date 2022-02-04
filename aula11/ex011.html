@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+        *{
+            margin: 0;
+            pad: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        h1{
+            padding-top: 25px;
+            margin-bottom: 10px;
+        }
+        div#paises{
+            background-color: gray;
+            width: 500px;
+            height: 150px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        div#pais{
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="paises">
+        <h1>Teste de Países</h1>
+        Digite seu país:<input type="text" name="verificador" id="verificador"/>
+        <input type="button" value="Verificar" onclick="verificar()"/>
+        <div id="pais"></div>
+    </div>
+
+
+<script>
+ 
+    var verificador = document.getElementById('verificador');
+    var pais = document.getElementById('pais');
+    
+    function verificar() {
+        
+        if (verificador.value == 'brasil' || verificador.value == 'BRASIL' || verificador.value == 'Brasil') {
+            pais.innerText = `Você é brasileiro`;
+        } else {
+            pais.innerText = `Você é estrangeiro`;
+        }
+    }
+           
+   </script>
+
+</body>
+</html>

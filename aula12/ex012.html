@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <style>
+         *{
+            margin: 0;
+            pad: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        h1{
+            margin-bottom: 10px;
+            padding-top: 5px;
+            height: 50px;
+            color: white;
+            background-color: rgba(32, 32, 32, 0.842);
+        }
+        div#votos{
+            background-color: gray;
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        div#res{
+            font-weight: bolder;
+            margin-top: 30px;
+        }
+        p.txtvt{
+            margin-top: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+  
+        <div id="votos">
+            <h1>Votação</h1>
+            <p class="txtvt">Coloque sua idade e descubra se você pode votar</p> <input type="number" name="txtvot" id="txtvot">
+            <input type="button" value="Verificar" onclick="votar()">
+            <div id="res"></div>
+        </div>
+  
+
+    <script>
+        function votar(){
+            var txtv = document.querySelector('input#txtvot')
+            var res = document.querySelector('div#res')
+            var voto = Number(txtv.value)
+            res.innerHTML = `<p>Sua idade é <strong>${voto}</strong></p>`
+
+            if(voto < 16){
+                res.innerHTML += `<p><strong>Você não vota!</strong></p>`
+            } else if(voto < 18 || voto > 65){
+                res.innerHTML += `<p><strong>Sua opção de voto é opcional!</strong></p>`
+            } else{
+                res.innerHTML += `<p><strong>Seu voto é obrigatório</strong></p>`
+            }
+          
+        }
+    </script>
+</body>
+</html>

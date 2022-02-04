@@ -1,0 +1,80 @@
+n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})
+n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'EUR'})
+n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'USD'})
+
+
+Operadores aritméticos do JS
++ = Soma
+- = Subtração
+* = Multiplicação
+/ = Divisão
+% = Resto da Divisão
+** = Potenciação
+
+Precedências dos Operadores aritméticos JS
+
+| ()
+| **
+| * / %
+| + -
+V
+
+autoatribuição JS
+         
+var n = 3  
+          Simplificação
+n = n + 4  ---------->  n += 4
+n = n - 5  ---------->  n -= 5
+n = n * 4  ---------->  n *= 4
+n = n / 2  ---------->  n /= 2
+n = n ** 2 ---------->  n **= 2
+n = n % 5  ---------->  n %= 5
+
+incremento
+
+var x = 5
+
+x = x + 1   ----------> x++
+x = x - 1   ----------> x--
+
+Operadores relacionais JS
+> maior que
+< menor que
+>= maior ou igual
+<= menor ou igual
+== igual
+!= diferente
+
+Operador de identidade
+===
+
+Operadores lógicos JS
+! - negação (não)
+&& - conjunção (e)
+|| - disjunção (ou)
+
+! > && > ||
+
+Operadores aritméticos > Operadores relacionais > Operadores lógicos
+
+Operador Ternário
+?
+:
+
+teste ? true : false
+
+//tipos de condinção JS
+
+
+//condinção simples
+if(condinção){
+    --true--
+}
+---------------------
+//condinção composta
+if(condinção) {
+    --true--
+} else{
+    --false--
+}
+
