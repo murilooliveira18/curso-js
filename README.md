@@ -1,4 +1,4 @@
 # curso-js
  curso de javascript
 
-<a href="https://github.com/murilooliveira18/curso-js/aula12/ex012.html">Execute aqui a página de votação</a>
+<a href="https://github.com/murilooliveira18/curso-js/blob/main/aula12/ex012.html">Executar o exercicio de votação</a>
