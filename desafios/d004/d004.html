@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Troco</title>
+    <style>
+            div{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background-color: lightgray;
+            display: inline-block;
+            border: 1px solid gray;
+            width: 220px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Troco</h1>
+
+    <div id="troco" onclick="troco()">Comprar produto</div>
+
+    <script>
+        function troco(){
+            var produto = prompt('Que produto você está comprando?')
+            var preco = Number(prompt(`Quanto custa ${produto} que você está comprando?\nObs: se for usar números quebrados use o .`))
+            var preco2 = Number(prompt(`Qual foi o valor que você deu para pagar ${produto}?`))
+            var troco = preco2 - preco
+
+            var troco2 = preco - preco2
+            
+            
+            if(troco < 0){
+                alert(`Está faltando ${troco2.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} para comprar o seu produto!`)
+            }
+            else{
+                alert(`Você comprou o ${produto} que custou ${preco.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}\nDeu ${preco2.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} em dinheiro e vai receber ${troco.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} de troco.\nVolte sempre!`)
+            }
+        }
+
+        //n1.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        div#converter{
+        font-size: 1.2em;
+        background-color: lightgray;
+        display: inline-block;
+        border: 1px solid gray;
+        width: 150px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+    }
+
+    div#res{
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+
+    <div id="converter" onclick="converter()">Converter</div>
+    <div id="res">Clique no botão acima para iniciar.</div>
+
+    <script>
+        function converter(){
+            var dis = Number(prompt('Digite uma distância em metros (m)'))
+            var res = document.getElementById('res')
+
+            var km = dis / 1000
+            var hm = dis / 100
+            var dam = dis / 10
+            var dm = dis * 10
+            var cm = dis * 100
+            var mm = dis * 1000
+          
+            res.innerHTML = `<h2>A distância de ${dis.toString().replace('.' , ',')} metros, corresponde a...</h2><p>${km.toFixed(3).toString().replace('.' , ',')} quilômetros (Km)</p>\n<p>${hm.toFixed(3).toString().replace('.' , ',')} hectômetros (Hm)</p>\n<p>${dam.toString().replace('.' , ',')} decâmetros (Dam)</p>\n<p>${dm.toString().replace('.' , ',')} decímetros (dm)</p>\n<p>${cm} centímetros (cm)</p>\n<p>${mm} milímetros (mm)</p>`
+            
+        }
+    </script>
+</body>
+</html>

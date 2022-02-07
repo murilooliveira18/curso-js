@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio boas-vindas</title>
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background-color: lightgray;
+            display: inline-block;
+            width: 150px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boas-vindas</h1>
+
+    <div onclick="iniciar()">Inicie o Desafio</div>
+
+    <script>
+        function iniciar(){
+            var nome = prompt('Qual é o seu nome?')
+            var idade = prompt(`Olá, ${nome}! Quantos anos você tem?`)
+            if(idade >=0 && idade <=150){
+                alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+            }else{
+                alert('[ERRO] O texto ou número digitado é invalido, digite um número e tente novamente!')
+            }
+            
+        }
+    </script>
+</body>
+</html>
