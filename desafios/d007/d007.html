@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de temperatura</title>
+    <title>Conversor R$ → US$</title>
     <style>
-         div#converter{
+    div#converter{
         font-size: 1.2em;
         background-color: lightgray;
         display: inline-block;
@@ -21,25 +21,25 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
     }
-
     </style>
 </head>
 <body>
-    <h1>Conversor de temperatura</h1>
+    <h1>Conversor R$ → US$</h1>
 
     <div id="converter" onclick="converter()">Converter</div>
+
     <div id="res">Clique no botão acima para iniciar.</div>
 
     <script>
+        var dolar = Number(prompt('Antes de mais nada. Quanto está a cotação do dólar agora?'))
+
         function converter(){
-            var temp = Number(prompt('Digite uma temperatura em ºC (Celsius)'))
+            var real = Number(prompt('Quantos R$ você tem na carteira?'))
+            var carteira = real / dolar
+
+    
             var res = document.getElementById('res')
-            var kelvin= temp + 273
-            var fahrenheit = temp * 1.8 + 32
-
-         
-            res.innerHTML = `<h2>A temperatura de ${temp.toString().replace('.' , ',')}ºC, corresponde a...</h2><p>${kelvin.toFixed(2).toString().replace('.' , ',')}ºK (Kelvin)</p><p>${fahrenheit.toFixed(2).toString().replace('.' , ',')}ºF (Fahrenheit)</p>`
-
+            res.innerHTML = `Você tem ${real.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} na carteira, que é igual a ${carteira.toLocaleString('pt-BR' , {style: 'currency', currency: 'USD'})} (dólares)`
         }
     </script>
 </body>
