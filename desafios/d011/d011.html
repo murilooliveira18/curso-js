@@ -58,11 +58,11 @@
             var ano = Number(prompt('Qual é o ano que você quer verificar?'))
             var res = document.querySelector('div#res')
             if((ano%400 == 0) || (ano%4 == 0 && ano%100 !=0)){
-                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark><p>É BISSEXTO✅</p></mark>`
+                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark><p>É BISSEXTO &#x2705;</p></mark>`
             }
 
             else{
-                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark id="naob"><p class="naobi">NÃO É BISSEXTO</p></mark>❌`
+                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark id="naob"><p class="naobi">NÃO É BISSEXTO</p></mark> &#x274C;`
             }
         }
     </script>
