@@ -17,3 +17,5 @@
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d011/d011.html">Executar o desafio 11 - Ano Bissexto</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d012/d012.html">Executar o desafio 12 - Preço mudou</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d013/d013.html">Executar o desafio 13 - Média aluno</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/aula14ex/ex016/modelo.html">Executar exercício Contador</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/aula14ex/ex017/modelo.html">Executar exercício Tabuada</a><br>
