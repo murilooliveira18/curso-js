@@ -11,7 +11,7 @@
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d007/d007.html">Executar o desafio 7 - Conversor R$ → US$</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d008/d008.html">Executar o desafio 8 - Cálculo de Desconto</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d009/d009.html">Executar o desafio 9 - Reajuste salarial</a><br>
-<a href="https://murilooliveira18.github.io/curso-js/desafios/d010/d010.html">Executar o desafio 10 - Fórmula de Bhaskara(calcular o &Delta;)</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/desafios/d010/d010.html">Executar o desafio 10 - Fórmula de Bhaskara (calcular o &Delta;)</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d011/d011.html">Executar o desafio 11 - Ano Bissexto</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d012/d012.html">Executar o desafio 12 - Preço mudou</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d013/d013.html">Executar o desafio 13 - Média aluno</a><br>
