@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço mudou</title>
+    <style>
+    div#verificar{
+        font-size: 1.1em;
+        background-color: lightgray;
+        display: inline-block;
+        border: 1px solid gray;
+        width: 220px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+
+    div#res{
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+
+    <div id="verificar" onclick="verificar()">Verificar</div>
+
+    <div id="res">Clique no botão acima para analisar a mudança de preço.</div>
+
+    <script>
+        function verificar(){
+            var precoA = Number(prompt('Qual era o preço anterior do produto?'))
+            var precoB = Number(prompt('Qual é o preço atual do produto?'))
+            var res = document.getElementById('res')
+            var diferenca = precoB - precoA
+            var diferenca2 = precoA - precoB
+            var porcentagem = diferenca / precoA * 100
+            var porcentagem2 = diferenca2 / precoB * 100
+
+            if(precoB > precoA){
+            res.innerHTML = `<h2>Analisando os valores informados</h2>
+            <p>O produto custava ${precoA.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} e agora custa ${precoB.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}.</p>
+            <p>Hoje o produto está mais caro.</p>
+            <p>O preço subiu ${diferenca.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>
+            <p>Uma variação de ${porcentagem.toFixed(1)}% pra cima.</p>`
+            }
+            else{
+                res.innerHTML = `<h2>Analisando os valores informados</h2>
+                <p>O produto custava ${precoA.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} e agora custa ${precoB.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}</p>
+                <p>Hoje o produto está mais barato.</p>
+                <p>O preço caiu ${diferenca2.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.
+                <p>Uma variação de ${porcentagem2.toFixed(2)}% para baixo.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
