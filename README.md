@@ -1,9 +1,9 @@
 # curso-js
  curso de javascript
 
-<a href="https://murilooliveira18.github.io/curso-js/meusexemplos/meu-exemplo.html">Executar o exercício de votação</a><br>
-<a href="https://murilooliveira18.github.io/curso-js/aula12ex/ex014/modelo.html">Executar exercício da Hora do dia</a><br>
-<a href="https://murilooliveira18.github.io/curso-js/aula12ex/ex015/modelo.html">Executar exercício verificador de idade</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/meusexemplos/meu-exemplo.html">Exercício de votação</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/aula12ex/ex014/modelo.html">Exercício Hora do dia</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/aula12ex/ex015/modelo.html">Exercício Verificador de idade</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d001/d001.html">Executar o desafio 1 - Mensagens</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d002/d002.html">Executar o desafio 2 - Boas-Vindas</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d003/d003.html">Executar o desafio 3 - Antecessor e Sucessor</a><br>
