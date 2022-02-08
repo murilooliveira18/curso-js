@@ -57,19 +57,17 @@
             var txtv = document.querySelector('input#txtvot')
             var res = document.querySelector('div#res')
             var voto = Number(txtv.value)
+            res.innerHTML = `<p>Sua idade é <strong>${voto}</strong></p><br>`
 
             if(voto >= 125){
                 res.innerHTML += `<p>O valor digitado é um valor muito alto ou está incorreto, digite outro número e tente novamente</p>`
             }
             else if(voto < 16){
-                res.innerHTML += `<p>Sua idade é <strong>${voto}</strong></p><br>
-                <p><strong>Você não vota!</strong></p>`
+                res.innerHTML += `<p><strong>Você não vota!</strong></p>`
             } else if(voto < 18 || voto > 65){
-                res.innerHTML += `<p>Sua idade é <strong>${voto}</strong></p><br>
-                <p><strong>Sua opção de voto é opcional!</strong></p>`
+                res.innerHTML += `<p><strong>Sua opção de voto é opcional!</strong></p>`
             } else{
-                res.innerHTML += `<p>Sua idade é <strong>${voto}</strong></p><br>
-                <p><strong>Seu voto é obrigatório</strong></p>`
+                res.innerHTML += `<p><strong>Seu voto é obrigatório</strong></p>`
             }
           
         }
