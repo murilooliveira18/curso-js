@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+    <style>
+    div#verificar{
+        font-size: 1.1em;
+        background-color: lightgray;
+        display: inline-block;
+        border: 1px solid gray;
+        width: 220px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+    }
+
+    div#res{
+        margin-top: 10px;
+    }
+
+    p{
+        display: inline;
+        color: rgb(2, 165, 2);
+        font-weight: bolder;
+    }
+
+    mark{
+        background-color: rgb(173, 255, 47);
+    }
+
+    mark#naob{
+        background-color: rgb(252, 116, 116);
+    }
+
+    p.naobi{
+        color: rgb(155, 0, 0);
+    }
+   
+    </style>
+</head>
+<body>
+    <h1>Ano Bissexto</h1>
+
+    <div id="verificar" onclick="verificar()">Verificar</div>
+
+    <div id="res">Informe um ano para saber se ele é bissexto</div>
+
+    <script>
+        function verificar(){
+            var ano = Number(prompt('Qual é o ano que você quer verificar?'))
+            var res = document.querySelector('div#res')
+            if((ano%400 == 0) || (ano%4 == 0 && ano%100 !=0)){
+                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark><p>É BISSEXTO✅</p></mark>`
+            }
+
+            else{
+                res.innerHTML = `<h1>Analisando o ano de ${ano}</h1>O ano de ${ano} <mark id="naob"><p class="naobi">NÃO É BISSEXTO</p></mark>❌`
+            }
+        }
+    </script>
+</body>
+</html>
