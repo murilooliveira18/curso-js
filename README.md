@@ -19,4 +19,4 @@
 <a href="https://murilooliveira18.github.io/curso-js/desafios/d013/d013.html">Executar o desafio 13 - Média aluno</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/aula14ex/ex016/modelo.html">Executar exercício Contador</a><br>
 <a href="https://murilooliveira18.github.io/curso-js/aula14ex/ex017/modelo.html">Executar exercício Tabuada</a><br>
-<a href="https://murilooliveira18.github.io/curso-js/aula16ex/ex018/modelo.html">Executar Analisador de Números</a><br>
+<a href="https://murilooliveira18.github.io/curso-js/aula16ex/ex018/modelo.html">Executar Analisador de Números</a><br>#0817FF
